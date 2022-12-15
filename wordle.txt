@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() 
+{
+  int testCase;
+  cin>>testCase;
+  while(testCase--)
+  {
+       string str1,str2;
+      cin>>str1;
+      cin>>str2;
+      vector<char> c;
+      int n = str1.length();
+      for(int i = 0;i<n;i++)
+      {
+        if(str1[i]==str2[i])
+          c.push_back('G');
+        else
+          c.push_back('B');  
+      }
+      for(int i = 0;i<n;i++)
+      {
+        cout<<c[i];
+       }
+       cout<<endl;
+  }
+	return 0;
+}
